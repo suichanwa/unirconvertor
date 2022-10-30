@@ -2,6 +2,10 @@ import React from "react";
 import { Form } from "react-final-form";
 
 const Convertform = () => {
+    const handeSubmit = () => {
+        console.log("Convert form submitted");
+    }
+
     return(
         <Form onSubmit={() => {
             console.log("tetisng");
