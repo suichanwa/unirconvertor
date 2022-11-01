@@ -8,8 +8,7 @@ const Root = () => {
 
     return (
         <Form onSubmit={() => {
-            console.log(a);
-
+            console.log('submitted');
         }}> 
             {props => (
                 <form onSubmit={props.handleSubmit}>
