@@ -1,17 +1,14 @@
 import React from 'react';
 import { Form } from 'react-final-form';
-import configureMeasurements from 'convert-units';
-import allMeasures from 'convert-units';
 
 const Root = () => {
-    const convert = configureMeasurements(allMeasures);
 
     return (
         <Form onSubmit={() => {
             console.log('submitted');
         }}> 
             {props => (
-                <form onSubmit={props.handleSubmit}>
+                <form>
                     <lable>
                         <input type="text" placeholder='Km' />
                         <input type="text" placeholder='metters' />
